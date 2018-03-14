@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.banhangdemo.activity.CartActivity">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolBarCart"
+    app:title="Giỏ hàng"
+    android:background="#4c6a97"
+    app:titleTextColor="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
+</android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            android:id="@+id/txtThongBao"
+            android:textColor="#b9484c"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:text="Giỏ hàng còn trống !"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<ListView
+    android:layout_marginTop="10dp"
+    android:id="@+id/listViewCart"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp">
+</ListView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:textStyle="bold"
+        android:textColor="#40a477"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:text="Tổng Tiền"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="@color/custom_txt"
+    android:text="Thanh Toán"
+    android:layout_marginTop="15dp"
+    android:id="@+id/btnThanhToan"
+    android:background="@drawable/btn_custom2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    <Button
+        android:textColor="@color/custom_txt"
+        android:text="Tiếp Tục Mua Hàng"
+        android:layout_marginTop="6dp"
+        android:id="@+id/btnTiepTuc"
+        android:background="@drawable/btn_custom2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    </LinearLayout>
+</LinearLayout>

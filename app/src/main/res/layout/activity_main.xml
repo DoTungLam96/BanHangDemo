@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBarMain"
+                android:background="#d6538e6c"
+                app:titleTextColor="#ffffff"
+                app:title="Trang Chủ"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+                
+            </android.support.v7.widget.Toolbar>
+            
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </ViewFlipper>
+            <LinearLayout
+                android:background="#d6538e6c"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold|italic"
+                    android:layout_margin="5dp"
+                    android:textSize="22sp"
+                    android:textColor="#a43a5c"
+                    android:text="Sản phẩm mới nhất"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recylerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+            
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navi"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i"
+                    android:padding="5dp"
+                    android:background="@drawable/c"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cir"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/acc"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:textColor="#e7e4e4"
+                    android:layout_marginLeft="14dp"
+                    android:layout_below="@id/cir"
+                    android:textSize="16sp"
+                    android:text="Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <ListView
+                android:layout_below="@+id/i"
+                android:layout_marginTop="6dp"
+                android:id="@+id/listViewMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+            </RelativeLayout>
+        </android.support.design.widget.NavigationView>
+        
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

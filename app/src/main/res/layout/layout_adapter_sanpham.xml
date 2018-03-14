@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#f3ede3e7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/newb"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgHinhSP"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+        <TextView
+            android:id="@+id/txtTenSP"
+            android:layout_marginTop="5dp"
+            android:textColor="#166568"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="Tên SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtGiaSP"
+            android:textColor="#9f1636"
+            android:layout_below="@id/txtTenSP"
+            android:textSize="16sp"
+            android:text="Giá SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

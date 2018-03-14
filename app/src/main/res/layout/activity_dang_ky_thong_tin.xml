@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background2"
+    tools:context="com.example.admin.banhangdemo.activity.DangKyThongTinActivity">
+<FrameLayout
+    android:background="@drawable/custom_text"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#70161f"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="Đăng Ký Thông Tin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <EditText
+        android:textSize="17sp"
+        android:maxLength="30"
+        android:hint="Nhập vào họ tên"
+        android:textColor="#5c6369"
+        android:padding="5dp"
+        android:id="@+id/txtDangKyTen"
+        android:background="@drawable/custom_edt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:textSize="17sp"
+            android:hint="Nhập vào email"
+            android:textColor="#5c6369"
+            android:padding="5dp"
+            android:id="@+id/txtDangKyEmail"
+            android:background="@drawable/custom_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:textSize="17sp"
+            android:maxLength="11"
+            android:inputType="number"
+            android:hint="Nhập vào số điện thoại"
+            android:textColor="#342bbc"
+            android:padding="5dp"
+            android:id="@+id/txtDangKySDT"
+            android:background="@drawable/custom_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="Nhập vào địa chỉ"
+            android:textSize="17sp"
+            android:textColor="#342bbc"
+            android:padding="5dp"
+            android:id="@+id/txtDangKyDiaChi"
+            android:background="@drawable/custom_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:id="@+id/btnXacNhan"
+            android:src="@drawable/check"
+            android:background="@null"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+            <ImageButton
+                android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnCancel"
+                android:src="@drawable/cancel"
+                android:background="@null"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
+</LinearLayout>

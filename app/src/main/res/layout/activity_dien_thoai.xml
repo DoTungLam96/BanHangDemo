@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.banhangdemo.activity.DienThoaiActivity">
+    <android.support.v7.widget.Toolbar
+        app:title="Điện Thoại"
+        android:id="@+id/toolBarDT"
+        android:background="#6f9596"
+        app:titleTextColor="#b74c65"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"></android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/listDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

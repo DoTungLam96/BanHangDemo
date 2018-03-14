@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgHinhCart"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="#bc263f"
+                android:textSize="18sp"
+                android:id="@+id/txtTenCartSP"
+                android:text="Ten san pham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#1f5035"
+                android:textSize="16sp"
+                android:id="@+id/txtGiaCartSP"
+                android:text="Gia san pham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:scaleType="fitXY"
+                    android:id="@+id/btnLeft"
+                    android:background="@null"
+                    android:src="@drawable/left"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textColor="#495c9e"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/txtSoLuong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageButton
+                    android:scaleType="fitXY"
+                    android:id="@+id/btnRight"
+                    android:background="@null"
+                    android:src="@drawable/right"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageButton
+                    android:layout_marginLeft="17dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/btnDel"
+                    android:background="@null"
+                    android:src="@drawable/trash"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
